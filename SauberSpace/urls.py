@@ -20,5 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # web ui
-    path('', include('web.urls')), 
+    path('', include('web.urls')),
+    
+    # gmail
+    path('', include('gmail.urls')), 
 ]

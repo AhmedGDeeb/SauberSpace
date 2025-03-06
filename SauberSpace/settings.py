@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # web ui app
-    'web'
+    'web',
+    # gmail
+    'gmail',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,12 @@ MEDIA_ROOT = '/home/SauberSpace/SauberSpace/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/SauberSpace/SauberSpace/static'
 STATIC_URL = '/static/'
+
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'hasmeier95@gmail.com'  # Replace with your Gmail address
+EMAIL_HOST_PASSWORD = 'jrou voom hgai wcfq'      # Replace with your Gmail app password
