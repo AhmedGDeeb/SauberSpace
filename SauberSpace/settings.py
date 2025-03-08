@@ -142,3 +142,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'hasmeier95@gmail.com'  # Replace with your Gmail address
 EMAIL_HOST_PASSWORD = 'jrou voom hgai wcfq'      # Replace with your Gmail app password
+# https://myaccount.google.com/apppasswords

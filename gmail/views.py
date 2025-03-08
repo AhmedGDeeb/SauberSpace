@@ -15,7 +15,7 @@ def send_email(request):
         send_mail(
             subject,
             full_message,
-            '',  # From email
-            ['ahmaddeebdev@gmail.com'],   # To email(s)
+            'SaurbeSpace',  # From email
+            ['bilalalhasan94eng@gmail.com'],   # To email(s) b
         )
     return render(request, 'index.html')  # Fallback to contact page
