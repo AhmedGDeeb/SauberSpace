@@ -208,17 +208,91 @@
             </div>
         </div>
         
-        <div class="contact" id="contact" style="background-image: url({% static 'web/imgs/contact.jpg' %});">
+        <div class="contact" id="contact">
             <div class="container">
                 <div class="contact-form">
-                    <form action="{% url 'send_email' %}" method="post">
+                    <form> <!--  action="{% url 'send_email' %}" -->
                         {% csrf_token %}
                         <input type="text" name="name" placeholder="Your name">
                         <input type="text" name="phone" placeholder="Phone number">
                         <input type="text" name="service" placeholder="Select service">
                         <input type="email" name="email" placeholder="Email">
                         <textarea name="message" placeholder="Message"></textarea>
-                        <input type="submit" value="Send">
+                        <!-- time -->
+                        <div class="container py-5">
+
+                            <h1 class="mb-4">Date and Time Reservation</h1>
+                            
+                            <!-- Calendar Element -->
+                            <div class="mb-3">
+                                <label for="datePicker" class="form-label">Choose a Date:</label>
+                                <input type="date" id="datePicker" class="form-control">
+                            </div>
+                        
+                            <!-- Button to Fetch Times -->
+                            <button id="fetchTimes" class="btn btn-primary">Get Available Times</button>
+                        
+                            <!-- Display Available Times -->
+                            <div id="timesContainer" class="mt-4"></div>
+                        
+                            <script>
+                                $(document).ready(function () {
+    // Fetch Available Times on Button Click
+    $('#fetchTimes').click(function (event) {
+        event.preventDefault(); // Prevent the default form submission or page refresh
+
+        const selectedDate = $('#datePicker').val();
+
+        if (!selectedDate) {
+            alert('Please select a date!');
+            return;
+        }
+
+        // Simulate API Call for Available Times
+        $.ajax({
+            url: '/api/getTimes', // Replace with your actual API endpoint
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ date: selectedDate }),
+            success: function (response) {
+                // Assume 'response' contains a list of available times
+                const availableTimes = response.times; // Example: ["08:00", "09:00", ..., "14:00"]
+
+                $('#timesContainer').empty(); // Clear previous buttons
+                if (availableTimes.length === 0) {
+                    $('#timesContainer').append('<p>No available times for this date.</p>');
+                } else {
+                    availableTimes.forEach(time => {
+                        const button = $(`<button class="btn btn-secondary m-2">${time}</button>`);
+                        button.click(function () {
+                            // Make Reservation API Call
+                            $.ajax({
+                                url: '/api/reserveTime', // Replace with your actual API endpoint
+                                method: 'POST',
+                                contentType: 'application/json',
+                                data: JSON.stringify({ date: selectedDate, time: time }),
+                                success: function () {
+                                    alert(`Time ${time} reserved for ${selectedDate}!`);
+                                },
+                                error: function () {
+                                    alert('Failed to reserve the time. Please try again.');
+                                }
+                            });
+                        });
+                        $('#timesContainer').append(button);
+                    });
+                }
+            },
+            error: function () {
+                alert('Failed to fetch available times. Please try again.');
+            }
+        });
+    });
+});
+
+                            </script>
+                            </div>
+                            </form>                        
                     </form>
                 </div>
             </div>
@@ -260,26 +334,7 @@
                 <p>Copyright ©  All rights reserved</p>
             </div>
         </footer>
-        
         <script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
-        <script>
-            $(function () {
-                
-                'use strict';
-                
-                $('.navbar ul.navbar-nav li.search a').on('click', function () {
-                    $(this).siblings('form').fadeToggle();
-                });
-                
-                $('.navbar ul.navbar-nav li a, footer ul.main-list li a').on('click', function (e) {
-                    
-                    var getAttr = $(this).attr('href');
-                    
-                    e.preventDefault();
-                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
-                });
-            });
-        </script>
     </body>
 </html>

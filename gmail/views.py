@@ -1,5 +1,5 @@
 from django.core.mail import send_mail
-from django.shortcuts import render
+from django.shortcuts import redirect
 
 def send_email(request):
     if request.method == 'POST':
@@ -18,4 +18,4 @@ def send_email(request):
             'SaurbeSpace',  # From email
             ['bilalalhasan94eng@gmail.com'],   # To email(s) b
         )
-    return render(request, 'index.html')  # Fallback to contact page
+    return redirect('index')
