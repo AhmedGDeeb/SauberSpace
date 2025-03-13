@@ -35,8 +35,8 @@ def get_times(request):
             return JsonResponse({'error': 'date parameter is required'}, status=400)
         today = datetime.strptime(date_str, '%Y-%m-%d').date() # Expect YYYY-MM-DD format
         print('>> today', today)
-        if today < datetime.today():
-            JsonResponse({'allowed_times': []})
+        if today < datetime.today().date():
+            return JsonResponse({'allowed_times': []})
         allowed_times = []
         _, max_allowed_hours, min_allowed_hours = valid_hour(0)
         for hour_ in range(min_allowed_hours, max_allowed_hours+1): # inclusive range
@@ -65,7 +65,7 @@ def reserve(request):
             date_str = data.get('date')
             hour_str = data.get('hour')
             name = data.get('name')
-            phone = date.get('phone')
+            phone = data.get('phone')
             email = data.get('email')
             message = data.get('message')
             print(">>> date and hour", date_str, hour_str)
@@ -90,7 +90,7 @@ def reserve(request):
                             subject,
                             full_message,
                             'SaurbeSpace',  # From email
-                            ['ahmaddeebdev@gmail.com'],   # bilalalhasan94eng@gmail.com
+                            ['ahmaddeebdev@gmail.com', 'bilalalhasan94eng@gmail.com'],   # 
                         )
                     except:
                         pass  # error sending gmail
