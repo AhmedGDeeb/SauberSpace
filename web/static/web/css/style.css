@@ -444,23 +444,23 @@ header .row > div:last-of-type button a {
 }
 
 .contact .container {
-    padding-top: 50px; 
-    padding-bottom: 50px; 
+    padding-top: 10; 
+    padding-bottom: 10; 
 }
 
 .contact .contact-form {
-    background-color: rgba(44, 115, 232, .65);
+    background-color: rgba(48, 127, 222, 0.65);
     padding: 30px;
-    width: 40%;
+    width: 100%;
 }
 
 .contact .contact-form input {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px 10px;
 }
 
 .contact .contact-form input[type='text'] {
-    width: 48%;
+    width: 100%;
 }
 
 .contact .contact-form input:nth-of-type(3) {
@@ -697,7 +697,7 @@ footer .copyright p {
     /* contact */
     
     .contact .contact-form {
-        width: 60%;
+        width: 100%;
     }
     
     /* footer */
@@ -784,7 +784,7 @@ footer .copyright p {
     /* contact */
     
     .contact .contact-form {
-        width: 80%;
+        width: 100%;
     }
     
     /* footer */

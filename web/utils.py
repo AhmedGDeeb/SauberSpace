@@ -28,5 +28,10 @@ def get_working_days():
             working_days.append(day)
     return working_days
 
-days = get_working_days()
-hours = ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"]
+def valid_date(date):
+    if date < datetime.today():
+        return False, None
+    return True, None
+
+def valid_hour(hour, min=8, max=13):
+    return hour >= min and hour <= max, max, min

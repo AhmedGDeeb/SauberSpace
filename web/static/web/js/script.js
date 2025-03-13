@@ -1,0 +1,118 @@
+$(document).ready(function () {
+    // Fetch Available Times on Button Click
+    $('#fetchTimes').click(function (event) {
+        event.preventDefault(); // Prevent the default form submission or page refresh
+
+        const selectedDate = $('#date').val();
+
+        if (!selectedDate) {
+            alert('Please select a date!');
+            return;
+        }
+
+        console.log(selectedDate);
+        
+        // Simulate API Call for Available Times
+        $.ajax({
+            url: '/api/get_times', // Replace with your actual API endpoint
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ date: selectedDate }),
+            success: function (response) {
+                // Assume 'response' contains a list of available times
+                const availableTimes = response.allowed_times; // Example: ["08:00", "09:00", ..., "14:00"]
+                console.log(availableTimes);
+
+                // Select the container
+                const timesContainer = document.getElementById("timesContainer");
+
+                // Clear any existing content in the container
+                timesContainer.innerHTML = "";
+
+                // Create a button group with radios
+                if (response.allowed_times.length==0) {
+                    alert("No available Times at this date.");
+                }
+
+                response.allowed_times.forEach((time, index) => {
+                    // Create an input element of type checkbox
+                    const radioInput = document.createElement("input");
+                    radioInput.type = "radio";
+                    radioInput.name = "hour";
+                    radioInput.id = `hour${index}`;
+                    radioInput.value = time;
+                    radioInput.classList.add("btn-check");
+                    radioInput.autocomplete="off";
+                    radioInput.required = true;
+
+
+                    // Create the label element styled as a button
+                    const radioLabel = document.createElement("label");
+                    radioLabel.htmlFor = `hour${index}`;
+                    radioLabel.classList.add("btn", "btn-info");
+                    radioLabel.textContent = time;
+
+                    // Append the checkbox input and label to the container
+                    timesContainer.appendChild(radioInput);
+                    timesContainer.appendChild(radioLabel);
+                    }
+                )},
+            error: function () {
+                alert('Failed to fetch available times. Please try again.');
+            }
+        });
+    });
+});
+
+
+$(document).ready(function () {
+    // Fetch Available Times on Button Click
+    $('#reserve').click(function (event) {
+        event.preventDefault(); // Prevent the default form submission or page refresh
+
+        const name = $('input[name="name"]').val();
+        const phone = $('input[name="phone"]').val();
+        const email = $('input[name="email"]').val();
+        const message = $('textarea[name="message"]').val();
+        const date = $('input[name="date"]').val();
+        const hour = $('input[name="hour"]:checked').val();
+        if (!name) {
+            alert('Please enter a name!');
+            return;
+        }
+        if (!phone) {
+            alert('Please enter a phone number!');
+            return;
+        }
+        if (!email) {
+            alert('Please select an email!');
+            return;
+        }
+        if (!message) {
+            alert('Please select a message!');
+            return;
+        }
+        if (!date) {
+            alert('Please select a date!');
+            return;
+        }
+        if (!hour) {
+            alert('Please select an hour!');
+            return;
+        }
+        
+        // Simulate API Call for Available Times
+        $.ajax({
+            url: '/api/reserve', // Replace with your actual API endpoint
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({name: name, phone:phone, email:email, message: message, date: date, hour: hour}),
+            success: function (response) {
+                alert('reserved Successfully.')
+            },
+            error: function () {
+                alert('Failed to fetch available times. Please try again.');
+            }
+        });
+    });
+});

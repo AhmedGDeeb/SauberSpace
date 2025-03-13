@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Visitor
+from .models import Visitor, Visits
 
 from django.contrib.auth.models import User, Group
 # Unregister the User and Group models
@@ -19,5 +19,17 @@ class VisitorAdmin(admin.ModelAdmin):
     def has_delete_permission(self, request, obj=None):
         return False
     
-admin.site.register(Visitor, VisitorAdmin)
+class VisitsAdmin(admin.ModelAdmin):
+    list_display = ('date', 'hour',)  # Columns to display in the admin list view
+    search_fields = ('date', 'hour',)  # Add a search bar for specific fields
+    list_filter = ('date',)  # Add filters for better navigation
 
+    # Disable the "Add" button
+    def has_add_permission(self, request):
+        return False
+
+    # Disable the "Delete" action
+    def has_delete_permission(self, request, obj=None):
+        return False
+admin.site.register(Visitor, VisitorAdmin)
+admin.site.register(Visits, VisitsAdmin)
