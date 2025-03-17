@@ -40,11 +40,12 @@ header#home {
 
 .navbar {
     background-color: transparent;
-    position: absolute;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    background-color: #2c73e8 !important;
 } 
 
 .navbar ul.navbar-nav li {

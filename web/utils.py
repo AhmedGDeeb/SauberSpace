@@ -33,5 +33,5 @@ def valid_date(date):
         return False, None
     return True, None
 
-def valid_hour(hour, min=8, max=13):
+def valid_hour(hour, min=8, max=15):
     return hour >= min and hour <= max, max, min
