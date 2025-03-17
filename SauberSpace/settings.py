@@ -150,5 +150,8 @@ EMAIL_HOST_PASSWORD = 'jrou voom hgai wcfq'      # Replace with your Gmail app p
 
 
 # Paypal credentials
-PAYPAL_RECEIVER_EMAIL = 'your-paypal-business-email@example.com'
+PAYPAL_RECEIVER_EMAIL = 'bilalalhasan94eng@gmail.com'
 PAYPAL_TEST = True  # Set to False for production
+
+CLIENT_ID = "ASSaJYcysPNKM3jZONzSEyCizspkqL5KA-htF3xkuqH-Qvi_x-iNgMbEQpS_tJId493fgvduLL3y3QRi"
+CLIENT_SECRET = "EAYKHd50k9ZhHk0FG7agQbWoPcDkL3RO-_h_dX3XUnNADja2rkAFVFxVwDvgcgQnt-WINYZz62e4h0pA"

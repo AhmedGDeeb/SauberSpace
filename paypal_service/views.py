@@ -3,8 +3,8 @@ from paypal.standard.forms import PayPalPaymentsForm
 
 def payment_view(request):
     paypal_dict = {
-        "business": "your-paypal-business-email@example.com",
-        "amount": "10.00",
+        "business": "bilalalhasan94eng@gmail.com",
+        "amount": "0.001",
         "item_name": "Example Item",
         "invoice": "unique-invoice-id",
         "notify_url": request.build_absolute_uri('/paypal-ipn/'),
