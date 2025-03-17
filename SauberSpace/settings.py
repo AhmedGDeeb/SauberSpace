@@ -37,11 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # paypal
+    'paypal.standard.ipn',
 
     # web ui app
     'web',
     # gmail
     'gmail',
+    # paypal web view
+    'paypal_service',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +147,8 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'hasmeier95@gmail.com'  # Replace with your Gmail address
 EMAIL_HOST_PASSWORD = 'jrou voom hgai wcfq'      # Replace with your Gmail app password
 # https://myaccount.google.com/apppasswords
+
+
+# Paypal credentials
+PAYPAL_RECEIVER_EMAIL = 'your-paypal-business-email@example.com'
+PAYPAL_TEST = True  # Set to False for production
