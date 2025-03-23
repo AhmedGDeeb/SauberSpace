@@ -24,7 +24,4 @@ urlpatterns = [
     
     # gmail
     path('', include('gmail.urls')), 
-
-    # paypal
-    path('', include('paypal_service.urls'))
 ]
