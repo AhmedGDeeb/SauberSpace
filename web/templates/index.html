@@ -15,7 +15,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light text-uppercase font-weight-bold fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img width="75" src="{% static 'web/imgs/logo.jpg' %}"alt="/" /></a>
+            <a class="navbar-brand" href="index.html"><img width="75" src="{% static 'web/imgs/logo.jpg' %}"
+                    alt="/" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,12 +47,12 @@
     <header class="text-uppercase" id="home">
         <div class="row" style="background-image: url({% static 'web/imgs/header-ai.jpg' %});">
             <div class="col-xl-5 col-lg-12">
-                <p><span>Glanz Fix</span> – Klare Sicht, Perfekter Glanz</p>
-                
+                <p><span>Glanz Fix</span> <br> Klare Sicht, Perfekter Glanz</p>
+
             </div>
             <div class="col-xl-7 col-lg-12">
                 <div class="white-overlay d-flex align-items-center">
-                    <button><a href="#contact" class="text-uppercase">contact now</a></button>
+                    <!-- <button><a href="#contact" class="text-uppercase">contact now</a></button> -->
                 </div>
             </div>
         </div>
@@ -59,13 +60,18 @@
     <div class="background" style="background-image: url({% static 'web/imgs/logo.jpg' %});"></div><!--  -->
     <div class="about-us">
         <div class="container">
-            <strong class="text-uppercase" id="about">Über uns</strong>
-            <h2 class="text-uppercase">Über uns<span></span></h2>
-            
+            <h2 id="about" class="text-uppercase">Über uns<span></span></h2>
+
             <div class="row">
                 <div class="col-lg-7 col-12 d-flex align-items-center">
-                    <p>Glanz Fix ist Ihr zuverlässiger Partner für professionelle Glas- und Fensterreinigung. Wir sorgen mit höchster Sorgfalt und modernen Reinigungstechniken für streifenfreien Glanz – ob in privaten Haushalten oder Geschäftsräumen. Unser Anspruch ist es, Qualität, Zuverlässigkeit und Kundenzufriedenheit in den Mittelpunkt zu stellen. 
-                        Mit unserer Erfahrung und einem Auge fürs Detail garantieren wir eine gründliche und schonende Reinigung aller Glasflächen. Dabei setzen wir auf umweltfreundliche Reinigungsmittel und effiziente Methoden, um beste Ergebnisse zu erzielen. Ihre Zufriedenheit ist unser Erfolg – lassen Sie Ihre Glasflächen mit Glanz Fix in neuem Licht erstrahlen.</p>
+                    <p>Glanz Fix ist Ihr zuverlässiger Partner für professionelle Glas- und Fensterreinigung. Wir sorgen
+                        mit höchster Sorgfalt und modernen Reinigungstechniken für streifenfreien Glanz – ob in privaten
+                        Haushalten oder Geschäftsräumen. Unser Anspruch ist es, Qualität, Zuverlässigkeit und
+                        Kundenzufriedenheit in den Mittelpunkt zu stellen.
+                        Mit unserer Erfahrung und einem Auge fürs Detail garantieren wir eine gründliche und schonende
+                        Reinigung aller Glasflächen. Dabei setzen wir auf umweltfreundliche Reinigungsmittel und
+                        effiziente Methoden, um beste Ergebnisse zu erzielen. Ihre Zufriedenheit ist unser Erfolg –
+                        lassen Sie Ihre Glasflächen mit Glanz Fix in neuem Licht erstrahlen.</p>
                 </div>
                 <div class="col-lg-5 col-12">
                     <div class="blue-shadow"></div>
@@ -104,8 +110,8 @@
                         <h4><a href="/">Erschwingliche Dienstleistungen</a></h4>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="rectangle"></div>
             </div>
         </div>
@@ -113,14 +119,24 @@
 
     <div class="what-we-do" id="team">
         <div class="container">
-             
+
             <h2 class="text-uppercase">Warum <span>Sie sich für uns entscheiden sollten:</span></h2>
-            <p>Verpflichtung zur Servicequalität: Wir setzen auf umweltfreundliche Produkte und gewährleisten die Einhaltung europäischer Standards.
-            </p>
-            <p>Wettbewerbsfähige Preise: Profitieren Sie von hervorragendem Service zu besten Preisen, individuell auf Ihre Bedürfnisse abgestimmt.</p>
-            <p>Maßgeschneiderte Dienstleistungen: Wir bieten flexible Reinigungspläne, die perfekt auf Ihre Anforderungen zugeschnitten sind.</p>
-            <p>
-                Langjährige Erfahrung: Mit unserer langjährigen Expertise in der Branche garantieren wir Ihnen zuverlässige, professionelle Dienstleistungen, die selbst höchsten Ansprüchen gerecht werden</p>
+            <ul>
+                <li><span>Verpflichtung zur Servicequalität:</span> Wir setzen auf umweltfreundliche Produkte und gewährleisten die
+                    Einhaltung europäischer Standards.</li>
+                    <li>
+                       <span> Wettbewerbsfähige Preise:</span> Profitieren Sie von hervorragendem Service zu besten Preisen, individuell auf
+                Ihre Bedürfnisse abgestimmt.
+                    </li>
+                    <li>
+                       <span> Maßgeschneiderte Dienstleistungen:</span> Wir bieten flexible Reinigungspläne, die perfekt auf Ihre
+                Anforderungen zugeschnitten sind.
+                    </li>
+                    <li>
+                        <span>Langjährige Erfahrung:</span> Mit unserer langjährigen Expertise in der Branche garantieren wir Ihnen
+                        zuverlässige, professionelle Dienstleistungen, die selbst höchsten Ansprüchen gerecht werden
+                    </li>
+            </ul>
             <div class="img" style="background-image: url({% static 'web/imgs/about-us-ai-2.jpg' %});"></div>
             <div class="start-button text-center">
                 <i class="fas fa-play"></i>
@@ -131,7 +147,7 @@
     <div class="prices">
         <div class="container">
             <div id="company"></div>
-            <h2 class="text-center text-uppercase">Unsere Preistabelle<span></span></h2>
+            <h2 class="text-center text-uppercase">Unsere Dienstleistung<span></span></h2>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="item f-item active">
@@ -151,7 +167,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="item active">
@@ -160,20 +176,24 @@
                         </div>
                         <div>
                             <ul>
-                                <li>Professionelle Reinigung für Restaurants (bis 65 m <sup>2</sup>) – Boden, Wände & Küchengeräte – Hygienestandards garantiert</li>
-                                <li> Reinigung des Bodens, der Wände und der Küchengeräte (Backofen, Gasherd, etc.): 375€
+                                <li>Professionelle Reinigung für Restaurants (bis 65 m <sup>2</sup>) – Boden, Wände &
+                                    Küchengeräte – Hygienestandards garantiert</li>
+                                <li> Umfassende Reinigung von Boden, Wänden und Küchengeräten (Backofen, Gasherd, etc.) für nur 375€
                                 </li>
-                                <li>Wir garantieren die Einhaltung europäischer Hygienestandards und die Verwendung umweltfreundlicher Reinigungsmittel.
-    
+                                <li>Gewährleistung der Einhaltung europäischer Hygienestandards
                                 </li>
-                                <li>Die Dienstleistung gilt für Restaurants mit einer Fläche von bis zu 65 m<sup>2</sup>.
+                                <li>
+                                    Verwendung umweltfreundlicher Reinigungsmittel garantiert
+                                </li>
+                                <li>Gültig für Restaurants bis 65
+                                    m<sup>2</sup>.
                                 </li>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="item active">
                         <div>
@@ -194,7 +214,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -204,17 +224,19 @@
                     <div class="item active">
                         <div>
                             <h5>Angebote und Rabatte</h5>
-                            
+
                         </div>
                         <div>
                             <ul>
                                 <li>Wir bieten attraktive Rabatte für Verträge, die länger als 6 Monate laufen.
                                 </li>
-                                <li>Zögern Sie nicht, uns für weitere Informationen oder maßgeschneiderte Angebote zu kontaktieren. Wir freuen uns auf neue Herausforderungen im Bereich der Dienstleistung für Sauberkeit und stehen Ihnen gerne zur Verfügung
+                                <li>Zögern Sie nicht, uns für weitere Informationen oder maßgeschneiderte Angebote zu
+                                    kontaktieren. Wir freuen uns auf neue Herausforderungen im Bereich der
+                                    Dienstleistung für Sauberkeit und stehen Ihnen gerne zur Verfügung
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -222,8 +244,14 @@
     </div>
 
     <div class="contact" id="contact">
+        <h2></h2>
+
         <div class="container">
             <div class="contact-form">
+                <h1>Kontakt und Buchung:</h1>
+                <h3>Haben Sie Fragen? Kontaktieren Sie uns gerne oder senden Sie eine Anfrage über unsere Website. Wir
+                    stehen Ihnen zur Verfügung, um Ihre Wünsche zu erfüllen.
+                </h3>
                 <form> <!--  action="{% url 'send_email' %}" -->
                     {% csrf_token %}
                     <input type="text" name="name" placeholder="Your name">
@@ -234,16 +262,17 @@
                     <!-- time -->
                     <div class="container py-5">
 
-                        <h1 class="mb-4">Datums- und Uhrzeitreservierung</h1>
+                        <h3 class="mb-4">Buchen Sie Ihren Termin ganz einfach über unsere Website!</h3>
 
                         <!-- Calendar Element -->
                         <div class="mb-3">
-                            <label for="date" class="form-label">Wählen Sie ein Datum:</label>
+                            <label for="date" class="form-label">Wählen Sie ein Datum:
+                            </label>
                             <input type="date" id="date" name="date" class="form-control">
                         </div>
 
                         <!-- Button to Fetch Times -->
-                        <button id="fetchTimes" class="btn btn-primary">Verfügbare Zeiten abrufen</button>
+                        <button id="fetchTimes" class="btn btn-primary">Verfügbare Zeiten anzeigen</button>
 
                         <!-- Display Available Times -->
                         <hr>
@@ -259,22 +288,19 @@
     <footer>
         <div class="main-part">
             <div class="container">
-                <div class="d-flex justify-content-between text-uppercase">
-                    <div><img width="75" src="{% static 'web/imgs/logo.jpg' %}"alt="/" /></div>
-                    <ul class="main-list">
-                        <li><a href="#home">Indexseite</a></li>
-                        <li><a href="#about">Über uns</a></li>
-                        <li><a href="#services">Leistungen</a></li>
-                        <li><a href="#team">team</a></li>
-                        <li><a href="#company">Unternehmen</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="/"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="/"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
+                <div class="d-flex justify-content-around text-uppercase">
+                    <div class="hide-on-medium-small"><img width="75" src="{% static 'web/imgs/logo.jpg' %}" alt="/" /></div>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li><a href="#home">Indexseite</a></li>
+                            <li><a href="#about">Über uns</a></li>
+                            <li><a href="#services">Leistungen</a></li>
+                            <li><a href="#team">team</a></li>
+                            <li><a href="#company">Unternehmen</a></li>
+                        </ul>
+                    </div>
+
                 <!-- <div class="text-center">
                     <form>
                         <label>
@@ -284,6 +310,30 @@
                         </label>
                     </form>
                 </div> -->
+            </div>
+        </div>
+        <div class="main-part">
+            <div class="container">
+                <div class="d-flex justify-content-around text-uppercase">
+                    <ul>
+                        <li>Glanz Fix</li>
+                        <li><i class="fas fa-phone"></i> (+49) 15757809132</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@glanzfix.com">info@glanzfix.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Altenbrückstraße 12, 40599 Düsseldorf</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-part">
+            <div id="media" class="container">
+                <div class="d-flex text-uppercase">
+                    <ul>
+                        <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="/"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="copyright text-center">

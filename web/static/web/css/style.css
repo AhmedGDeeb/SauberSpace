@@ -1,4 +1,6 @@
-*, html, body {
+*,
+html,
+body {
     transition: all 1s ease;
 }
 
@@ -8,7 +10,7 @@ body {
 }
 
 .white-overlay {
-    background-color: rgba(255,255,255,0.65);
+    background-color: rgba(255, 255, 255, 0.65);
     height: 100%;
     width: 100%;
 }
@@ -25,7 +27,8 @@ li {
     list-style-type: none;
 }
 
-button, a {
+button,
+a {
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -46,7 +49,7 @@ header#home {
     width: 100%;
     z-index: 1000;
     background-color: #2c73e8 !important;
-} 
+}
 
 .navbar ul.navbar-nav li {
     padding: 0 6px;
@@ -103,13 +106,13 @@ footer div.copyright a:focus {
 
 /* header */
 
-header .row > div:first-of-type {
+header .row>div:first-of-type {
     background-color: #2c73e8;
     margin-top: 94px;
     color: #FFF;
 }
 
-header .row > div:first-of-type p {
+header .row>div:first-of-type p {
     font-size: 110px;
     margin-left: 15%;
     line-height: 110px;
@@ -117,11 +120,11 @@ header .row > div:first-of-type p {
     margin-top: 150px;
 }
 
-header .row > div:first-of-type p span {
+header .row>div:first-of-type p span {
     color: #000;
 }
 
-header .row > div:first-of-type button {
+header .row>div:first-of-type button {
     display: block;
     margin: 0 auto;
     position: absolute;
@@ -134,7 +137,7 @@ header .row > div:first-of-type button {
     bottom: -30px;
 }
 
-header .row > div:first-of-type button a {
+header .row>div:first-of-type button a {
     display: block;
     padding: 0 40px;
     color: #FFF;
@@ -143,17 +146,18 @@ header .row > div:first-of-type button a {
     line-height: 63px;
 }
 
-header .row > div:last-of-type, header .row > div:first-of-type {
+header .row>div:last-of-type,
+header .row>div:first-of-type {
     padding: 0;
 }
 
-header .row > div:last-of-type {
+header .row>div:last-of-type {
     background-size: cover;
     height: 90vh;
     width: 100%;
 }
 
-header .row > div:last-of-type button {
+header .row>div:last-of-type button {
     display: block;
     margin: 0 auto;
     background-color: transparent;
@@ -161,15 +165,15 @@ header .row > div:last-of-type button {
     padding: 0;
 }
 
-header .row > div:last-of-type button:hover {
+header .row>div:last-of-type button:hover {
     background-color: #2c73e8;
 }
 
-header .row > div:last-of-type button:hover a {
+header .row>div:last-of-type button:hover a {
     color: #FFF;
 }
 
-header .row > div:last-of-type button a {
+header .row>div:last-of-type button a {
     display: block;
     padding: 15px 90px;
     font-size: 25px;
@@ -182,7 +186,7 @@ header .row > div:last-of-type button a {
     padding: 100px 0;
 }
 
-.about-us strong{
+.about-us strong {
     color: #2c73e8;
 }
 
@@ -190,7 +194,7 @@ header .row > div:last-of-type button a {
     margin: 10px 0;
 }
 
-.about-us .container > p {
+.about-us .container>p {
     font-size: 25px;
 }
 
@@ -235,7 +239,7 @@ header .row > div:last-of-type button a {
     position: relative;
 }
 
-.services h2 + p {
+.services h2+p {
     margin-bottom: 100px;
 }
 
@@ -297,8 +301,8 @@ header .row > div:last-of-type button a {
     height: 550px;
     position: absolute;
     transform: rotate(-4deg);
-    z-index: -1; 
-    right: -85px; 
+    z-index: -1;
+    right: -85px;
     bottom: 95px;
     background-color: #2c73e8;
 }
@@ -315,7 +319,7 @@ header .row > div:last-of-type button a {
     margin: 0 auto;
 }
 
-.what-we-do h2 + p {
+.what-we-do h2+p {
     margin-bottom: 30px;
 }
 
@@ -352,12 +356,12 @@ header .row > div:last-of-type button a {
     margin-bottom: 100px;
 }
 
-.prices .item > div:last-of-type{
+.prices .item>div:last-of-type {
     border: 1px solid #000;
     border-top: none;
 }
 
-.prices .item > div:first-of-type{
+.prices .item>div:first-of-type {
     padding: 20px;
     background-color: #052242;
     color: #FFF;
@@ -365,26 +369,26 @@ header .row > div:last-of-type button a {
     border-top-right-radius: 50px;
 }
 
-.prices .item > div:last-of-type {
+.prices .item>div:last-of-type {
     padding: 20px;
     text-align: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
-.prices .item > div:last-of-type p span:first-of-type {
+.prices .item>div:last-of-type p span:first-of-type {
     color: #052242;
     font-weight: bold;
     font-size: 25px;
 }
 
-.prices .item > div:last-of-type p span:nth-of-type(2) {
+.prices .item>div:last-of-type p span:nth-of-type(2) {
     color: #2c73e8;
     font-weight: bold;
     font-size: 35px;
 }
 
-.prices .item > div:last-of-type ul {
+.prices .item>div:last-of-type ul {
     text-align: center;
     margin: 0 auto;
     padding: 0;
@@ -392,18 +396,18 @@ header .row > div:last-of-type button a {
     margin-bottom: 50px;
 }
 
-.prices .item > div:last-of-type ul li{
+.prices .item>div:last-of-type ul li {
     padding: 20px 0;
     list-style-type: none;
     border-top: 1px solid #052242;
     color: #052242;
 }
 
-.prices .item > div:last-of-type ul li:last-of-type{
+.prices .item>div:last-of-type ul li:last-of-type {
     border-bottom: 1px solid #052242;
 }
 
-.prices .item > div:last-of-type button {
+.prices .item>div:last-of-type button {
     background: #2c73e8;
     border: none;
     padding: 0;
@@ -411,7 +415,7 @@ header .row > div:last-of-type button a {
     margin-top: 30px;
 }
 
-.prices .item > div:last-of-type button a {
+.prices .item>div:last-of-type button a {
     padding: 15px 40px;
     display: block;
     color: #FFF;
@@ -429,12 +433,12 @@ header .row > div:last-of-type button a {
     background-color: #052242;
 }
 
-.prices .row .item.active > div:first-of-type{
+.prices .row .item.active>div:first-of-type {
     padding: 35px 0;
     background-color: #2c73e8;
 }
 
-.prices .row .item.active > div:last-of-type p {
+.prices .row .item.active>div:last-of-type p {
     margin-top: 30px;
 }
 
@@ -445,8 +449,8 @@ header .row > div:last-of-type button a {
 }
 
 .contact .container {
-    padding-top: 10; 
-    padding-bottom: 10; 
+    padding-top: 10;
+    padding-bottom: 10;
 }
 
 .contact .contact-form {
@@ -468,7 +472,9 @@ header .row > div:last-of-type button a {
     float: right;
 }
 
-.contact .contact-form input:first-of-type, .contact .contact-form input[type="email"], .contact .contact-form textarea {
+.contact .contact-form input:first-of-type,
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
     width: 100%;
 }
 
@@ -516,25 +522,25 @@ footer ul li {
     padding: 0 12px
 }
 
-footer .d-flex + div {
+footer .d-flex+div {
     padding: 40px 0 20px;
     width: 70%;
     margin: 0 auto;
 }
 
-footer .d-flex + div form {
+footer .d-flex+div form {
     width: 600px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
-footer .d-flex + div input[type='text'] {
+footer .d-flex+div input[type='text'] {
     margin-left: 20px;
     width: 250px;
     padding-left: 10px
 }
 
-footer .d-flex + div input[type="submit"] {
+footer .d-flex+div input[type="submit"] {
     position: relative;
     right: 4px;
     height: 29.5px;
@@ -557,242 +563,261 @@ footer .copyright p {
 /* media queries */
 
 @media (max-width: 1200px) {
-    
+
     /* header*/
-    
-    header .row > div:first-of-type {
+
+    header .row>div:first-of-type {
         margin-top: 0;
     }
 
-    header .row > div:first-of-type p {
+    header .row>div:first-of-type p {
         font-size: 60px;
-        margin-left: 0; 
+        margin-left: 0;
         text-align: center;
         margin-top: 50px;
     }
 
-    header .row > div:first-of-type button {
+    header .row>div:first-of-type button {
         top: 0;
         margin-bottom: 65px;
     }
-    
+
     /* about us */
-    
+
     .about-us .blue-shadow {
         left: 140px;
         height: 320px;
     }
-    
+
 }
 
 @media (max-width: 992px) {
-    
+
     /* navbar */
-    
+
     .navbar ul {
         background-color: rgb(44, 115, 232, .7);
     }
-    .navbar ul li a{
+
+    .navbar ul li a {
         margin-left: 20px
     }
-    .navbar ul li a{
+
+    .navbar ul li a {
         color: #FFF !important;
     }
+
     .navbar ul li:first-of-type {
         margin-left: 0;
     }
+
     .navbar ul li:first-of-type a {
-        background-color: #FFF !important;
         margin-left: 0;
         padding-left: 20px;
     }
+
     .navbar ul li.search form {
         position: static;
         margin-bottom: 15px;
         width: 100%;
     }
-    
-     /* header*/
-    
-    header .row > div:first-of-type p {
+
+    /* header*/
+
+    header .row>div:first-of-type p {
         font-size: 50px;
     }
-    
+
     /* about us */
-    
+
     .about-us {
         padding-bottom: 0;
     }
-    
-    .about-us .row > div:first-of-type {
+
+    .about-us .row>div:first-of-type {
         order: 2;
     }
-    
-    .about-us .row > div:last-of-type {
+
+    .about-us .row>div:last-of-type {
         order: 1;
     }
-    
+
     .about-us .d-flex {
         display: block !important;
     }
-    
+
     .about-us button {
         position: static;
         display: block;
         margin: 35px auto;
     }
-    
+
     .about-us .blue-shadow {
         display: none;
     }
+
     .about-us img {
         width: 50%;
         margin: 0 auto;
         display: block;
         margin-bottom: 50px;
     }
-    
+
     /* services */
-    
+
     .services {
         padding-top: 50px
     }
-    
+
     .services .rectangle {
         height: 705px;
         bottom: 115px;
     }
-    
+
     /* what we do */
-    
+
     .what-we-do .container {
         width: 1140px;
     }
-    
+
     /* prices */
-    
+
     .prices h2 {
         margin-bottom: 30px
     }
-    
+
     .prices .item {
         margin-bottom: 40px;
     }
-    .prices .item > div:first-of-type {
+
+    .prices .item>div:first-of-type {
         border-top-left-radius: 50px;
     }
+
     .prices .col-lg-4:nth-of-type(2) .active {
         position: static;
         border-top-left-radius: 50px;
-    } 
+    }
+
     .prices .col-lg-4:nth-of-type(2) {
         order: 1;
     }
+
     .prices .col-lg-4:first-of-type {
         order: 2
     }
+
     .prices .col-lg-4:last-of-type {
         order: 3;
     }
-    
+
     /* contact */
-    
+
     .contact .contact-form {
         width: 100%;
     }
-    
+
     /* footer */
-    
+
     footer .d-flex {
         display: block !important;
         padding-bottom: 0;
     }
-    footer .d-flex > div {
+
+    footer .d-flex>div {
         padding-left: 12px;
         margin-bottom: 20px;
     }
+
     footer .d-flex ul {
         padding-left: 0;
         margin-bottom: 20px
     }
-    footer .d-flex + div {
+
+    footer .d-flex+div {
         width: 100%
     }
-    
+
 }
 
 @media (max-width: 768px) {
-    
-     /* header*/
-    
-    header .row > div:first-of-type p {
+
+    /* header*/
+
+    header .row>div:first-of-type p {
         font-size: 50px;
         margin-top: 150px;
         margin-bottom: 25px;
-        line-height: 60px; 
+        line-height: 60px;
     }
 
-    header .row > div:first-of-type button {
+    header .row>div:first-of-type button {
         margin-bottom: 65px;
     }
-    
+
     /* about us */
-    
+
     .about-us img {
         width: 70%;
     }
-    
+
     /* services */
-    
+
     .services {
         padding-bottom: 50px;
     }
-    
+
     .services .rectangle {
         display: none;
     }
+
     .services .item {
         background-color: #2c73e8;
         color: white;
     }
-    .services .item a, .services .item a:hover{
+
+    .services .item a,
+    .services .item a:hover {
         color: white;
     }
-    .services h2 + p {
+
+    .services h2+p {
         margin-bottom: 50px;
     }
+
     .services button {
-        position: static; 
+        position: static;
         margin: 30px auto;
     }
-    
+
     /* what we do */
-    
+
     .what-we-do {
         margin: 50px 0;
     }
-    
+
     .what-we-do .container {
         width: 100%;
     }
-    
+
     /* prices */
-    
-    .prices .col-lg-4:last-of-type .item{
+
+    .prices .col-lg-4:last-of-type .item {
         margin-bottom: 50px
     }
-    
+
     /* contact */
-    
+
     .contact .contact-form {
         width: 100%;
     }
-    
+
     /* footer */
-    
-    footer .d-flex + div form {
+
+    footer .d-flex+div form {
         width: 500px
     }
+
     footer .d-flex ul:first-of-type li {
         display: block;
         float: none;
@@ -803,65 +828,70 @@ footer .copyright p {
 @media (max-width: 576px) {
 
     .navbar {
-       background-color: #fff;
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       z-index: 1000;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     header#home {
-       height: 650px;
+        height: 650px;
     }
 
-    header .row > div:first-of-type button {
-       display: inline;
-       margin: 0 auto;
-       position: relative;
-       bottom: 0;
-       background-color: #2c73e8;
-       box-shadow: 0 0 25px -6px #000;
-       border: none;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       float: none;
-       display: flex;
+    header .row>div:first-of-type button {
+        display: inline;
+        margin: 0 auto;
+        position: relative;
+        bottom: 0;
+        background-color: #2c73e8;
+        box-shadow: 0 0 25px -6px #000;
+        border: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        float: none;
+        display: flex;
     }
 
-    header .row > div:last-of-type {
-       background-size: cover;
-       height: 350px;
-       width: 100%;
+    header .row>div:last-of-type {
+        background-size: cover;
+        height: 350px;
+        width: 100%;
     }
-    
+
     /* contact */
-    
+
     .contact .contact-form {
         width: 100%;
     }
-    
+
     /* footer */
-    
-    footer .d-flex + div form, footer .d-flex + div form label {
+
+    footer .d-flex+div form,
+    footer .d-flex+div form label {
         width: 100%
     }
-    footer .d-flex + div form input[type="text"] {
+
+    footer .d-flex+div form input[type="text"] {
         display: block;
         margin-bottom: 10px
     }
-    footer .d-flex + div form input[type="text"] {
-        width: 100%;        
+
+    footer .d-flex+div form input[type="text"] {
+        width: 100%;
         margin-left: 0;
         margin-top: 20px;
     }
-    footer .d-flex + div form input[type="submit"] {
+
+    footer .d-flex+div form input[type="submit"] {
         width: 40%
     }
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -870,14 +900,18 @@ body, html {
 .background {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
-    opacity: 0.5; /* Sets the transparency */
-    position: fixed; /* Fixes the background to the viewport */
+    background-attachment: fixed;
+    /* Ensures the background stays fixed while scrolling */
+    opacity: 0.5;
+    /* Sets the transparency */
+    position: fixed;
+    /* Fixes the background to the viewport */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Keeps it behind the content */
+    z-index: -1;
+    /* Keeps it behind the content */
 }
 
 
@@ -886,4 +920,110 @@ body, html {
     z-index: 1;
     padding: 20px;
     color: black;
+}
+
+#media .d-flex {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    flex-wrap: nowrap;
+    /* Prevents wrapping */
+}
+
+#media ul {
+    display: flex;
+    /* Ensures icons stay in a row */
+    gap: 15px;
+    /* Adds space between the icons */
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#media ul li a {
+    text-decoration: none;
+    /* Removes underline */
+    font-size: 1.5em;
+    /* Adjust size for icons */
+}
+
+@media (max-width: 1400px) {
+
+    /* For smaller screens */
+    #media .d-flex {
+        display: flex !important;
+        justify-content: center;
+        /* Keeps icons centered */
+        flex-wrap: nowrap;
+        /* Ensures horizontal alignment */
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Targets medium and small screens */
+    .hide-on-medium-small {
+        display: none;
+        /* Hides the div */
+    }
+}
+
+
+#home>div>div.col-xl-5.col-lg-12>p {
+    font-size: 45px;
+}
+
+#team>div>ul>li {
+    list-style-type: circle;
+}
+
+#team>div>ul>li>span {
+    font-weight: bold;
+}
+
+#timesContainer {
+    display: flex;
+    justify-content: space-around;
+    /* Adds equal spacing between buttons */
+    align-items: center;
+    /* Aligns buttons vertically */
+    flex-wrap: wrap;
+    /* Allows wrapping if needed */
+}
+
+#timesContainer input[type="radio"] {
+    display: none;
+    /* Hides the radio buttons */
+}
+
+#timesContainer label {
+    cursor: pointer;
+    /* Makes the label clickable */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #052244;
+    /* Bootstrap 'btn-info' color */
+    color: white;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#timesContainer input[type="radio"]:checked+label {
+    background-color: #021428;
+    /* Darker shade for active buttons */
+    border-color: #021428;
+    /* Adds border color for active buttons */
+    transform: scale(1.05);
+    /* Slightly enlarges the selected button */
+}
+
+#timesContainer label:hover {
+    background-color: #041d3a;
+    /* Hover effect */
+    transform: scale(1.05);
+    /* Slightly enlarges on hover */
 }
