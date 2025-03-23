@@ -6,7 +6,7 @@ $(document).ready(function () {
         const selectedDate = $('#date').val();
 
         if (!selectedDate) {
-            alert('Please select a date!');
+            alert('Bitte Datum auswählen!');
             return;
         }
 
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
                 // Create a button group with radios
                 if (response.allowed_times.length==0) {
-                    alert("No available Times at this date.");
+                    alert("An diesem Datum sind keine Zeiten verfügbar.");
                 }
 
                 response.allowed_times.forEach((time, index) => {
@@ -58,7 +58,7 @@ $(document).ready(function () {
                     }
                 )},
             error: function () {
-                alert('Failed to fetch available times. Please try again.');
+                alert('Verfügbare Zeiten konnten nicht abgerufen werden. Bitte versuchen Sie es erneut.');
             }
         });
     });

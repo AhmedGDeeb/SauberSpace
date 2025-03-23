@@ -32,7 +32,7 @@ def get_times(request):
         date_str = data.get('date')
         print('>> getting date_str', date_str)
         if not date_str:
-            return JsonResponse({'error': 'date parameter is required'}, status=400)
+            return JsonResponse({'error': 'Datumsparameter ist erforderlich'}, status=400)
         today = datetime.strptime(date_str, '%Y-%m-%d').date() # Expect YYYY-MM-DD format
         print('>> today', today)
         if today < datetime.today().date():
@@ -50,7 +50,7 @@ def get_times(request):
         print('>> allowed times: ', allowed_times)
         return JsonResponse({'allowed_times': allowed_times})
     except ValueError:
-        return JsonResponse({'error': 'Invalid date format. Use YYYY-MM-DD'}, status=400)
+        return JsonResponse({'error': 'Ungültiges Datumsformat. Verwenden Sie YYYY-MM-DD'}, status=400)
     except ValidationError as e:
         return JsonResponse({'error': str(e)}, status=400)
 
@@ -70,14 +70,14 @@ def reserve(request):
             message = data.get('message')
             print(">>> date and hour", date_str, hour_str)
             if not date_str or not hour_str:
-                return JsonResponse({'error': 'date and hour parameters are required'}, status=400)
+                return JsonResponse({'error': 'Datums- und Stundenparameter sind erforderlich'}, status=400)
 
             # check if datetime is reserved or not
             date = datetime.strptime(date_str, '%Y-%m-%d').date()  # Expect YYYY-MM-DD format
             hour = datetime.strptime(hour_str, '%H:%M').time()  # Expect HH:MM format
             visit = Visits.objects.filter(date=date, hour=hour)
             if visit.exists():
-                return JsonResponse({'error': 'Visit already exists'}, status=409)
+                return JsonResponse({'error': 'Besuch existiert bereits'}, status=409)
             else:
                 # reserve the visit
                 try:
@@ -94,11 +94,11 @@ def reserve(request):
                         )
                     except:
                         pass  # error sending gmail
-                    return JsonResponse({'message': 'Visit saved'}, status=201)
+                    return JsonResponse({'message': 'Besuch gespeichert'}, status=201)
                 except:
-                    return JsonResponse({'error': 'Internal Server Error'}, status=500)
+                    return JsonResponse({'error': 'interner Serverfehler'}, status=500)
     except Exception as e:
         # Print exception details for debugging (optional)
         print(">>> Exception occurred:", str(e))
-        return JsonResponse({'error': 'Internal Server Error'}, status=500)
+        return JsonResponse({'error': 'interner Serverfehler'}, status=500)
     

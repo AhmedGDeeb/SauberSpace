@@ -19,10 +19,10 @@ class Visits(models.Model):
     def clean(self):
         day_is_valid, _ = valid_date(self.date)
         if not day_is_valid:
-            raise ValueError('day: {} is not valid'.format(self.date))
+            raise ValueError('Tag: {} ist ungültig'.format(self.date))
         hour_is_valid, max_valid_hour, min_valid_hour = valid_hour(self.hour)
         if not hour_is_valid:
-            raise ValueError('hour must be in the valid range [{}, {}]'.format(max_valid_hour, min_valid_hour))
+            raise ValueError('Stunde muss im gültigen Bereich liegen [{}, {}]'.format(max_valid_hour, min_valid_hour))
 
         super().clean()
 
