@@ -77,27 +77,27 @@ $(document).ready(function () {
         const date = $('input[name="date"]').val();
         const hour = $('input[name="hour"]:checked').val();
         if (!name) {
-            alert('Please enter a name!');
+            alert('Bitte geben Sie einen Namen ein!');
             return;
-        }
-        if (!phone) {
-            alert('Please enter a phone number!');
+            }
+            if (!phone) {
+            alert('Bitte geben Sie eine Telefonnummer ein!');
             return;
-        }
-        if (!email) {
-            alert('Please select an email!');
+            }
+            if (!email) {
+            alert('Bitte wählen Sie eine E-Mail-Adresse aus!');
             return;
-        }
-        if (!message) {
-            alert('Please select a message!');
+            }
+            if (!message) {
+            alert('Bitte wählen Sie eine Nachricht aus!');
             return;
-        }
-        if (!date) {
-            alert('Please select a date!');
+            }
+            if (!date) {
+            alert('Bitte wählen Sie ein Datum aus!');
             return;
-        }
-        if (!hour) {
-            alert('Please select an hour!');
+            }
+            if (!hour) {
+            alert('Bitte wählen Sie eine Stunde aus!');
             return;
         }
         
@@ -108,10 +108,10 @@ $(document).ready(function () {
             contentType: 'application/json',
             data: JSON.stringify({name: name, phone:phone, email:email, message: message, date: date, hour: hour}),
             success: function (response) {
-                alert('reserved Successfully.')
+                alert('Erfolgreich reserviert.')
             },
             error: function () {
-                alert('Failed to fetch available times. Please try again.');
+            alert('Verfügbare Zeiten konnten nicht abgerufen werden. Bitte versuchen Sie es erneut.');
             }
         });
     });

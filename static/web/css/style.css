@@ -395,12 +395,12 @@ header .row > div:last-of-type button a {
 .prices .item > div:last-of-type ul li{
     padding: 20px 0;
     list-style-type: none;
-    border-top: 1px solid #898989;
-    color: #898989;
+    border-top: 1px solid #052242;
+    color: #052242;
 }
 
 .prices .item > div:last-of-type ul li:last-of-type{
-    border-bottom: 1px solid #898989;
+    border-bottom: 1px solid #052242;
 }
 
 .prices .item > div:last-of-type button {
