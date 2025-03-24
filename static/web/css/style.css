@@ -71,10 +71,6 @@ h2 {
     color: #2c73e8 !important;
 }
 
-.navbar ul.navbar-nav li i {
-    font-size: 22px;
-}
-
 .navbar ul.navbar-nav li form {
     position: absolute;
     background-color: white;
@@ -85,7 +81,7 @@ h2 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -94,6 +90,7 @@ p {
     background-color: #e2dfdf;
     width: 100%;
 }
+
 
 footer div.copyright a {
     color: #fff;

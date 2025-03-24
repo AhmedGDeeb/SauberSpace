@@ -24,9 +24,9 @@
 
             <div class="collapse navbar-collapse" id="show-menu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#home">Indexseite <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Über uns</a>
                     </li>
@@ -63,7 +63,7 @@
             <h2 id="about" class="text-uppercase">Über uns<span></span></h2>
 
             <div class="row">
-                <div class="col-lg-7 col-12 d-flex align-items-center">
+                <div class="col-lg-7 col-12 d-flex">
                     <p>Glanz Fix ist Ihr zuverlässiger Partner für professionelle Glas- und Fensterreinigung. Wir sorgen
                         mit höchster Sorgfalt und modernen Reinigungstechniken für streifenfreien Glanz – ob in privaten
                         Haushalten oder Geschäftsräumen. Unser Anspruch ist es, Qualität, Zuverlässigkeit und
@@ -84,8 +84,8 @@
     <div class="services text-center">
         <div class="container">
             <h2 class="text-uppercase" id="services">Unsere Leistungen<span></span></h2>
-            <p>Typesetting industry lorem Ipsum is simply dummy text of the </p>
-            <div class="row">
+            <!-- <p>Typesetting industry lorem Ipsum is simply dummy text of the </p> -->
+            <div class="row d-flex align-items-stretch">
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="item">
                         <i class="fas fa-stopwatch fa-3x"></i>
@@ -121,26 +121,28 @@
         <div class="container">
 
             <h2 class="text-uppercase">Warum <span>Sie sich für uns entscheiden sollten:</span></h2>
-            <ul>
-                <li><span>Verpflichtung zur Servicequalität:</span> Wir setzen auf umweltfreundliche Produkte und gewährleisten die
-                    Einhaltung europäischer Standards.</li>
-                    <li>
-                       <span> Wettbewerbsfähige Preise:</span> Profitieren Sie von hervorragendem Service zu besten Preisen, individuell auf
-                Ihre Bedürfnisse abgestimmt.
-                    </li>
-                    <li>
-                       <span> Maßgeschneiderte Dienstleistungen:</span> Wir bieten flexible Reinigungspläne, die perfekt auf Ihre
-                Anforderungen zugeschnitten sind.
-                    </li>
-                    <li>
-                        <span>Langjährige Erfahrung:</span> Mit unserer langjährigen Expertise in der Branche garantieren wir Ihnen
-                        zuverlässige, professionelle Dienstleistungen, die selbst höchsten Ansprüchen gerecht werden
-                    </li>
-            </ul>
+            <p>
+                <ul>
+                    <li><span>Verpflichtung zur Servicequalität:</span> Wir setzen auf umweltfreundliche Produkte und gewährleisten die
+                        Einhaltung europäischer Standards.</li>
+                        <li>
+                           <span> Wettbewerbsfähige Preise:</span> Profitieren Sie von hervorragendem Service zu besten Preisen, individuell auf
+                    Ihre Bedürfnisse abgestimmt.
+                        </li>
+                        <li>
+                           <span> Maßgeschneiderte Dienstleistungen:</span> Wir bieten flexible Reinigungspläne, die perfekt auf Ihre
+                    Anforderungen zugeschnitten sind.
+                        </li>
+                        <li>
+                            <span>Langjährige Erfahrung:</span> Mit unserer langjährigen Expertise in der Branche garantieren wir Ihnen
+                            zuverlässige, professionelle Dienstleistungen, die selbst höchsten Ansprüchen gerecht werden
+                        </li>
+                </ul>
+            </p>
             <div class="img" style="background-image: url({% static 'web/imgs/about-us-ai-2.jpg' %});"></div>
-            <div class="start-button text-center">
+            <!-- <div class="start-button text-center">
                 <i class="fas fa-play"></i>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -172,7 +174,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="item active">
                         <div>
-                            <h5>Zusatzdienstleistung für Restaurants</h5>
+                            <h5>Restaurants</h5>
                         </div>
                         <div>
                             <ul>
@@ -198,23 +200,21 @@
                     <div class="item active">
                         <div>
                             <h5>Salons</h5>
-                            <p>Reinigung von Mode-, Parfüm- und Friseursalons:
-                            </p>
+                            
                         </div>
                         <div>
+                            <span>Reinigung von Mode-, Parfüm- und Friseursalons:</span>
                             <ul>
                                 <li>Preisspanne: 100€ - 275€</li>
                                 <li>Der Preis hängt von der Größe des Geschäfts ab.
                                 </li>
-                                <li>
-                                    <p>Die Leistungen beinhalten:</p>
-                                    Reinigung des Bodens (Porzellan oder Holz). <br>
-                                    Reinigung der Spiegel und Ausstellungsflächen. <br>
-                                    Reinigung der Außenfassade des Geschäfts, um Kunden anzulocken.
-                                </li>
                             </ul>
+                            <span>Die Leistungen beinhalten:</span>
+                            <ul>
+                                <li>Reinigung des Bodens (Porzellan oder Holz). </li>
+                                <li>Reinigung der Spiegel und Ausstellungsflächen. </li>
+                                <li>Reinigung der Außenfassade des Geschäfts, um Kunden anzulocken.</li>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -288,18 +288,15 @@
     <footer>
         <div class="main-part">
             <div class="container">
-                <div class="d-flex justify-content-around text-uppercase">
-                    <div class="hide-on-medium-small"><img width="75" src="{% static 'web/imgs/logo.jpg' %}" alt="/" /></div>
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li><a href="#home">Indexseite</a></li>
-                            <li><a href="#about">Über uns</a></li>
-                            <li><a href="#services">Leistungen</a></li>
-                            <li><a href="#team">team</a></li>
-                            <li><a href="#company">Unternehmen</a></li>
-                        </ul>
-                    </div>
+                <div class="d-flex justify-content-between text-uppercase">
+                    <ul>
+                        <li class="right"><img width="75" src="{% static 'web/imgs/logo.jpg' %}" alt="/" /></li> <!--class="hide-on-medium-small"-->
+                        <!-- <li><a href="#home">Indexseite</a></li> -->
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#services">Leistungen</a></li>
+                        <li><a href="#team">team</a></li>
+                        <li><a href="#company">Unternehmen</a></li>
+                    </ul>
 
                 <!-- <div class="text-center">
                     <form>
@@ -314,9 +311,9 @@
         </div>
         <div class="main-part">
             <div class="container">
-                <div class="d-flex justify-content-around text-uppercase">
+                <div class="d-flex justify-content-between text-uppercase">
                     <ul>
-                        <li>Glanz Fix</li>
+                        <li class="right">Glanz Fix</li>
                         <li><i class="fas fa-phone"></i> (+49) 15757809132</li>
                         <li><i class="fas fa-envelope"></i> <a href="mailto:info@glanzfix.com">info@glanzfix.com</a></li>
                         <li><i class="fas fa-map-marker-alt"></i> Altenbrückstraße 12, 40599 Düsseldorf</li>
