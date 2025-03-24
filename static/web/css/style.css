@@ -929,7 +929,9 @@ html {
 }
 
 
-
+.container {
+    width: 95% !important;
+}
 .content {
     position: relative;
     z-index: 1;

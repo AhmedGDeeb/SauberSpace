@@ -80,12 +80,11 @@ h2 {
     background-color: white;
     padding: 6px;
     display: none;
-    width: 230px;
+    width: 100%;
     right: 0
 }
 
 p {
-    font-size: 25px;
     font-weight: 400;
 }
 
@@ -425,7 +424,6 @@ header .row>div:last-of-type button a {
     border-radius: 50px;
     border-top-left-radius: 0;
     box-shadow: 6px 6px 10px #d9d5d5, -6px -6px 10px #d9d5d5;
-    position: relative;
     bottom: 60px;
     
 }
@@ -601,6 +599,7 @@ footer .copyright p {
 
 }
 
+
 @media (max-width: 992px) {
 
     /* navbar */
@@ -751,11 +750,38 @@ footer .copyright p {
 }
 
 @media (max-width: 768px) {
+    /* navbar */
 
+    .navbar ul {
+        background-color: rgb(44, 115, 232, .7);
+    }
+
+    .navbar ul li a {
+        margin-left: 20px
+    }
+
+    .navbar ul li a {
+        color: #FFF !important;
+    }
+
+    .navbar ul li:first-of-type {
+        margin-left: 0;
+    }
+
+    .navbar ul li:first-of-type a {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .navbar ul li.search form {
+        position: static;
+        margin-bottom: 15px;
+        width: 100%;
+    }
     /* header*/
 
     header .row>div:first-of-type p {
-        font-size: 50px;
+        font-size: 35px;
         margin-top: 150px;
         margin-bottom: 25px;
         line-height: 60px;
@@ -768,7 +794,7 @@ footer .copyright p {
     /* about us */
 
     .about-us img {
-        width: 70%;
+        width: 100%;
     }
 
     /* services */
@@ -836,14 +862,33 @@ footer .copyright p {
 }
 
 @media (max-width: 576px) {
+    /* navbar */
 
-    .navbar {
-        background-color: #fff;
-        position: absolute;
-        top: 0;
-        left: 0;
+    .navbar ul {
+        background-color: rgb(44, 115, 232, .7);
+    }
+
+    .navbar ul li a {
+        margin-left: 20px
+    }
+
+    .navbar ul li a {
+        color: #FFF !important;
+    }
+
+    .navbar ul li:first-of-type {
+        margin-left: 0;
+    }
+
+    .navbar ul li:first-of-type a {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .navbar ul li.search form {
+        position: static;
+        margin-bottom: 15px;
         width: 100%;
-        z-index: 1000;
     }
 
     header#home {
@@ -902,8 +947,8 @@ footer .copyright p {
 
 body,
 html {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
 }
 
@@ -987,9 +1032,6 @@ html {
 }
 
 
-#home>div>div.col-xl-5.col-lg-12>p {
-    font-size: 45px;
-}
 
 #team>div>ul>li {
     list-style-type: circle;
@@ -1045,4 +1087,10 @@ html {
 
 .right{
     margin-right: 50px;
+}
+
+
+
+.container {
+    width: 95% !important;
 }

@@ -249,16 +249,16 @@
         <div class="container">
             <div class="contact-form">
                 <h1>Kontakt und Buchung:</h1>
-                <h3>Haben Sie Fragen? Kontaktieren Sie uns gerne oder senden Sie eine Anfrage über unsere Website. Wir
+                <p>Haben Sie Fragen? Kontaktieren Sie uns gerne oder senden Sie eine Anfrage über unsere Website. Wir
                     stehen Ihnen zur Verfügung, um Ihre Wünsche zu erfüllen.
-                </h3>
+                </p>
                 <form> <!--  action="{% url 'send_email' %}" -->
                     {% csrf_token %}
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="text" name="phone" placeholder="Phone number">
+                    <input type="text" name="name" placeholder="Ihr Name">
+                    <input type="text" name="phone" placeholder="Telefonnummer">
                     <!-- <input type="text" name="service" placeholder="Select service"> -->
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="email" name="email" placeholder="E-Mail">
+                    <textarea name="message" placeholder="Nachricht"></textarea>
                     <!-- time -->
                     <div class="container py-5">
 
