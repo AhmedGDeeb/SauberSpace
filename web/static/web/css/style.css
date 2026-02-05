@@ -58,7 +58,7 @@ header#home {
 }
 
 h2 {
-    font-size: 45px;
+    /*font-size: 45px;*/
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -351,10 +351,6 @@ header .row>div:last-of-type button a {
 
 /* prices */
 
-.prices h2 {
-    margin-bottom: 100px;
-}
-
 .prices .item>div:last-of-type {
     border: 1px solid #000;
     border-top: none;
@@ -425,7 +421,7 @@ header .row>div:last-of-type button a {
     border-top-left-radius: 0;
     box-shadow: 6px 6px 10px #d9d5d5, -6px -6px 10px #d9d5d5;
     bottom: 60px;
-    
+
 }
 
 .prices .row .item.active button {
@@ -450,6 +446,9 @@ header .row>div:last-of-type button a {
     margin-top: 30px;
 }
 
+.prices h2 {
+    margin-bottom: 50px;
+}
 /* contact */
 
 .contact {
@@ -692,11 +691,11 @@ footer .copyright p {
     /* prices */
 
     .prices h2 {
-        margin-bottom: 30px
+        margin-bottom: 50px;
     }
 
     .prices .item {
-        margin-bottom: 40px;
+        margin: 50px;
     }
 
     .prices .item>div:first-of-type {
@@ -1093,4 +1092,12 @@ html {
 
 .container {
     width: 95% !important;
+}
+
+.prices .row .item{
+    margin: 10px;
+}
+
+* {
+    padding: 5px;
 }

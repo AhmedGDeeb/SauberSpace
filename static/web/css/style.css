@@ -309,7 +309,7 @@ header .row>div:last-of-type button a {
 /* what we do */
 
 .what-we-do {
-    margin: 100px 0;
+    margin: 100px 0 50px 0;
     position: relative;
 }
 
@@ -323,7 +323,7 @@ header .row>div:last-of-type button a {
 }
 
 .what-we-do .img {
-    height: 300px;
+    height: 700px;
     width: 100%;
     box-shadow: 3px 3px 10px #d9d5d5, -3px -3px 10px #d9d5d5;
     background-size: cover;
@@ -425,7 +425,7 @@ header .row>div:last-of-type button a {
     border-top-left-radius: 0;
     box-shadow: 6px 6px 10px #d9d5d5, -6px -6px 10px #d9d5d5;
     bottom: 60px;
-    
+
 }
 
 .prices .row .item.active button {

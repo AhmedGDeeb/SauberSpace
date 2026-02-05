@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z-v)*jr7!ugqci$af@0c$uu=vz5#qo+%aomh%14wfva^l_&j8d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['SauberSpace.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ahmadghdeeb.pythonanywhere.com', 'SauberSpace.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -140,7 +140,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'hasmeier95@gmail.com'  # Replace with your Gmail address
-EMAIL_HOST_PASSWORD = 'jrou voom hgai wcfq'      # Replace with your Gmail app password
+EMAIL_HOST_USER = ''  # Replace with your Gmail address
+EMAIL_HOST_PASSWORD = ''      # Replace with your Gmail app password
 # https://myaccount.google.com/apppasswords
 
